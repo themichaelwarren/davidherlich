@@ -21,7 +21,7 @@ body {
   padding: 2em;
   color: #ffffff;
   background: #eeeeee;
-  min-height: 500px;
+  height: 100vh;
 }
 
 .last {
