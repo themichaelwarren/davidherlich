@@ -18,9 +18,13 @@ body {
 
 .parent {
   display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 
-.item {
+
+.item,
+.details {
   width: 50%;
   padding: 2em;
   color: #000;
@@ -28,25 +32,30 @@ body {
   height: 100vh;
 }
 
-.last {
-  color: #222;
-  background: #ccc;
+.full {
+    width: 100%;
+    padding: 4em;
 }
+
+
 
 @media screen and (max-width: 749px){
   
-  .parent {
-    flex-direction: column-reverse;  
-  }
+    .parent {
+        flex-direction: column-reverse;
+        
+    }
+
   
   .item {
     width: auto;
     height: 50vh;
   }
+    
+    .details {
+        height: auto;
+    }
   
-  .last {
-    background: #aa0000;
-  }
   
 }
 
