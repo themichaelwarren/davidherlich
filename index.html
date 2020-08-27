@@ -20,6 +20,7 @@
     <meta name="author" content="">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
     <link rel="icon" href="images/main_favicon.png">
@@ -33,8 +34,11 @@
     
 <div class="parent">
   
-  <div class="item">
-    <h2>Hi, I'm Dave.</h2>
+  <div class="item vertical-center">
+    <h2>Hi, I'm David.</h2>
+      <p class="typed-text">
+        I do <span class="moving-text"></span><span id="typed" class="moving-text"></span>
+    </p>
     </div>
   
   <div class="item last dave">
@@ -45,7 +49,16 @@
     
 
 
-
+<script>
+        var typed = new Typed('#typed',{
+                        strings:['international relations','community outreach','business strategy','global enterprise','creative content','two bowtie man'],
+                        backDelay: 1000,
+                        backSpeed: 40,
+                        typeSpeed: 40,
+                        loop: true,
+                        showCursor: true
+                      });
+</script>
 
       
       
