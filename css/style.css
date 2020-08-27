@@ -9,38 +9,53 @@ body {
   position: relative;
 }
 
-.container-info {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  min-height: 490px;
-  background-color: red; }
-  @media (min-width: 900px) {
-    .container-info {
-      float: left;
-      /*position: fixed;*/
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 50%; } }
+
+
+.parent {
+  display: flex;
+  font-family: arial, sans-serif;
+}
+
+.item {
+  width: 50%;
+  padding: 2em;
+  color: #ffffff;
+  background: #eeeeee;
+  min-height: 500px;
+}
+
+.last {
+  color: #222;
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px){
+  
+  .parent {
+    flex-direction: column-reverse;  
+  }
+  
+  .item {
+    width: auto;
+    height: 50vh;
+  }
+  
+  .last {
+    background: #aa0000;
+  }
+  
+}
 
 
 
-.container-main {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  min-height: 490px;
-  background-color: grey; }
-  @media (min-width: 900px) {
-    .container-main {
-      float: right;
-      /*position: fixed;*/
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 50%; } }
 
 
 
-.
+.dave {
+  background: url(/images/dave.jpg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-position: center ;
+}
