@@ -95,3 +95,14 @@ h6 { color: gray}
   background-size: cover;
     background-position: center ;
 }
+
+
+//Calendly Embed//
+.scheduler {
+height:630px;
+}
+@media screen and (max-width: 749px){
+  .scheduler {
+      height:1000px;
+  }
+}
